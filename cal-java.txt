@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+class calculator {
+
+  public static void main(String[] args) {
+
+    double result, num1, num2;
+    String ch;
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("frist number :");
+    num1 = input.nextDouble();
+    System.out.print("secend number :");
+    num2 = input.nextDouble();
+
+    System.out.print("enter a chartor +,-,*,/ :");
+    ch = input.next();
+    System.out.println("\n");
+
+    switch (ch) {
+
+      case "+": {
+        result = num1 + num2;
+
+        System.out.println(num1 + " + " + num2 + " result = " + result);
+        System.out.println("\n");
+        break;
+      }
+
+      case "-": {
+        result = num1 - num2;
+
+        System.out.println(num1 + " - " + num2 + " result = " + result);
+
+        System.out.println("\n");
+        break;
+      }
+
+      case "*": {
+        result = num1 * num2;
+
+        System.out.println(num1 + " * " + num2 + " result = " + result);
+
+        System.out.println("\n");
+        break;
+      }
+
+      case "/": {
+        result = num1 / num2;
+
+        System.out.println(num1 + " / " + num2 + " result = " + result);
+
+        System.out.println("\n");
+        break;
+      }
+
+      default:
+        System.out.println("invailed number");
+        System.out.println("\n");
+        break;
+
+    }
+  }
+}
